@@ -1,119 +1,123 @@
-<section class="py-20 sm:py-28 lg:py-32" aria-labelledby="problem-solution-heading">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+<section class="py-16 sm:py-24 relative overflow-hidden" aria-labelledby="problem-solution-heading">
+    
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 space-y-12">
         
-        <!-- Header -->
-        <div class="max-w-3xl mx-auto text-center space-y-4">
-            <span class="px-3 py-1 rounded-full text-xs font-semibold bg-rose-50 text-rose-700 border border-rose-200/60 uppercase tracking-wider">
-                The Inbox Problem & The Solution
-            </span>
-            <h2 id="problem-solution-heading" class="font-display font-extrabold text-3xl sm:text-4xl lg:text-5xl text-slate-900 tracking-tight">
-                Less inbox management.<br class="hidden sm:inline" />
-                <span class="bg-gradient-to-r from-indigo-600 to-violet-600 bg-clip-text text-transparent">More meaningful work.</span>
+        <!-- Vaultline Header -->
+        <div class="max-w-3xl mx-auto text-center space-y-3">
+            <div class="eyebrow justify-center">
+                <span class="line"></span>
+                <span>INBOX DILEMMA & AUTONOMOUS SOLUTION</span>
+                <span class="line"></span>
+            </div>
+            <h2 id="problem-solution-heading" class="text-2xl sm:text-4xl lg:text-5xl font-extrabold text-[#EAF1F7] tracking-tight">
+                Less inbox friction. <br>
+                <span class="accent">More superhuman throughput.</span>
             </h2>
-            <p class="text-base sm:text-lg text-slate-600 leading-relaxed">
-                Knowledge workers spend up to 28% of their week reading and drafting emails. Email AI Agent transforms chaotic inboxes into structured action queues.
+            <p class="text-sm sm:text-base text-[#B7C2D6] leading-relaxed max-w-2xl mx-auto">
+                Knowledge workers spend 28% of their workweek reading and drafting emails. <strong class="text-[#EAF1F7]">Milo</strong> transforms chaotic inboxes into structured, prioritized action queues.
             </p>
         </div>
 
-        <!-- Split Grid: Before vs After -->
-        <div class="mt-14 sm:mt-18 grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
+        <!-- Split Grid: Traditional Drain vs Milo Superpowers -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
             
             <!-- Traditional Workflow (Pain Points) -->
-            <div class="rounded-3xl p-6 sm:p-8 bg-white border border-slate-200/90 shadow-sm flex flex-col justify-between space-y-6">
-                <div>
-                    <div class="flex items-center justify-between pb-4 border-b border-slate-100">
-                        <div class="flex items-center gap-2.5">
-                            <div class="w-8 h-8 rounded-lg bg-rose-50 border border-rose-200 flex items-center justify-center text-rose-600">
-                                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                                </svg>
+            <div class="role-card">
+                <div class="role-inner justify-between space-y-6">
+                    <div>
+                        <div class="flex items-center justify-between pb-4 border-b border-white/10">
+                            <div class="flex items-center gap-3">
+                                <div class="w-9 h-9 rounded-xl bg-[rgba(242,120,120,0.12)] border border-[rgba(242,120,120,0.3)] flex items-center justify-center text-[var(--red)] font-bold">
+                                    ✕
+                                </div>
+                                <span class="font-bold text-base text-[#EAF1F7]">The Traditional Inbox Drain</span>
                             </div>
-                            <span class="font-display font-bold text-base text-slate-900">The Traditional Inbox Drain</span>
+                            <span class="status-chip red">
+                                Overwhelming
+                            </span>
                         </div>
-                        <span class="text-xs font-semibold text-rose-600 uppercase tracking-wide">Overwhelming</span>
+
+                        <ul class="mt-6 space-y-4 text-xs sm:text-sm text-[#B7C2D6]">
+                            <li class="flex items-start gap-3">
+                                <span class="text-[var(--red)] font-bold mt-0.5">✕</span>
+                                <div>
+                                    <strong class="text-[#EAF1F7]">Buried High-Priority Requests:</strong> Critical client deals get lost in endless newsletter blasts and routine team updates.
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-[var(--red)] font-bold mt-0.5">✕</span>
+                                <div>
+                                    <strong class="text-[#EAF1F7]">Context Switching Fatigue:</strong> Wasting 15 minutes skimming 12-message threads just to figure out who asked for what.
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-[var(--red)] font-bold mt-0.5">✕</span>
+                                <div>
+                                    <strong class="text-[#EAF1F7]">Repetitive Typing:</strong> Writing identical routine scheduling notes and follow-ups repeatedly every morning.
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-[var(--red)] font-bold mt-0.5">✕</span>
+                                <div>
+                                    <strong class="text-[#EAF1F7]">Manual Tagging Overhead:</strong> Trying to maintain nested Gmail labels that fall out of sync in 48 hours.
+                                </div>
+                            </li>
+                        </ul>
                     </div>
 
-                    <ul class="mt-6 space-y-4 text-sm text-slate-600">
-                        <li class="flex items-start gap-3">
-                            <div class="w-5 h-5 rounded-full bg-rose-100/70 text-rose-600 flex items-center justify-center flex-shrink-0 mt-0.5 text-xs font-bold">✕</div>
-                            <div>
-                                <strong class="text-slate-900">Buried High-Priority Emails:</strong> Critical client inquiries get lost in the noise of marketing blasts and team notifications.
-                            </div>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <div class="w-5 h-5 rounded-full bg-rose-100/70 text-rose-600 flex items-center justify-center flex-shrink-0 mt-0.5 text-xs font-bold">✕</div>
-                            <div>
-                                <strong class="text-slate-900">Context Switching & Skimming:</strong> Wasting 15 minutes scrolling endless email chains just to understand what action is needed.
-                            </div>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <div class="w-5 h-5 rounded-full bg-rose-100/70 text-rose-600 flex items-center justify-center flex-shrink-0 mt-0.5 text-xs font-bold">✕</div>
-                            <div>
-                                <strong class="text-slate-900">Repetitive Typing:</strong> Writing similar routine replies and scheduling follow-ups over and over every morning.
-                            </div>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <div class="w-5 h-5 rounded-full bg-rose-100/70 text-rose-600 flex items-center justify-center flex-shrink-0 mt-0.5 text-xs font-bold">✕</div>
-                            <div>
-                                <strong class="text-slate-900">Manual Labeling Overhead:</strong> Trying to maintain color-coded folders that constantly fall out of sync.
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="p-4 rounded-2xl bg-rose-50/50 border border-rose-100 text-xs text-rose-800 font-medium">
-                    ⚠️ Result: Inbox anxiety, missed deadlines, and hours lost every day.
+                    <div class="p-3.5 rounded-xl bg-[rgba(242,120,120,0.08)] border border-[rgba(242,120,120,0.25)] text-xs text-[var(--red)] mono flex items-center gap-2">
+                        <span>⚠️ Result: Constant inbox anxiety, missed deadlines, and hours lost every day.</span>
+                    </div>
                 </div>
             </div>
 
-            <!-- AI Agent Workflow (The Solution) -->
-            <div class="rounded-3xl p-6 sm:p-8 bg-gradient-to-br from-indigo-900 via-slate-900 to-slate-950 text-white shadow-xl shadow-indigo-950/20 flex flex-col justify-between space-y-6 relative overflow-hidden">
-                <!-- Background ambient decorative glow -->
-                <div class="absolute -top-24 -right-24 w-64 h-64 bg-indigo-500/20 rounded-full blur-3xl pointer-events-none"></div>
-
-                <div class="relative z-10">
-                    <div class="flex items-center justify-between pb-4 border-b border-slate-800">
-                        <div class="flex items-center gap-2.5">
-                            <div class="w-8 h-8 rounded-lg bg-indigo-500/20 border border-indigo-400/40 flex items-center justify-center text-indigo-300">
-                                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-                                </svg>
+            <!-- Milo Superpower Workflow (The Solution) -->
+            <div class="role-card">
+                <div class="role-inner justify-between space-y-6">
+                    <div>
+                        <div class="flex items-center justify-between pb-4 border-b border-white/10">
+                            <div class="flex items-center gap-3">
+                                <div class="brand-badge w-9 h-9">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2DE3C8" stroke-width="2.2"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"/><path d="M9 12l2 2 4-4"/></svg>
+                                </div>
+                                <span class="font-bold text-base text-[#EAF1F7]">With Milo — AI Email Agent</span>
                             </div>
-                            <span class="font-display font-bold text-base text-white">With Email AI Agent</span>
+                            <span class="status-chip">
+                                Superhuman
+                            </span>
                         </div>
-                        <span class="text-xs font-semibold text-indigo-400 uppercase tracking-wide">Intelligent</span>
+
+                        <ul class="mt-6 space-y-4 text-xs sm:text-sm text-[#B7C2D6]">
+                            <li class="flex items-start gap-3">
+                                <span class="text-[var(--cyan)] font-bold mt-0.5">✓</span>
+                                <div>
+                                    <strong class="text-[#EAF1F7]">Instant Urgency & Sentiment Radar:</strong> High-value requests are surfaced to the top with urgency scores and deadlines.
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-[var(--cyan)] font-bold mt-0.5">✓</span>
+                                <div>
+                                    <strong class="text-[#EAF1F7]">2-Sentence Cognitive Briefings:</strong> Milo synthesizes lengthy threads into actionable decisions before you type a word.
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-[var(--cyan)] font-bold mt-0.5">✓</span>
+                                <div>
+                                    <strong class="text-[#EAF1F7]">Contextual Multi-Tone Drafts:</strong> High-fidelity responses ready for your review — toggle between Executive, Concise, or Warm.
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-[var(--cyan)] font-bold mt-0.5">✓</span>
+                                <div>
+                                    <strong class="text-[#EAF1F7]">Autonomous Label Sync:</strong> Clean organization into Client, Compliance, Finance, or Archive without manual effort.
+                                </div>
+                            </li>
+                        </ul>
                     </div>
 
-                    <ul class="mt-6 space-y-4 text-sm text-slate-300">
-                        <li class="flex items-start gap-3">
-                            <div class="w-5 h-5 rounded-full bg-indigo-500/30 text-indigo-300 flex items-center justify-center flex-shrink-0 mt-0.5 text-xs font-bold">✓</div>
-                            <div>
-                                <strong class="text-white">Instant Urgency & Sentiment Flags:</strong> Urgent client requests are flagged to the top with clear action summaries.
-                            </div>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <div class="w-5 h-5 rounded-full bg-indigo-500/30 text-indigo-300 flex items-center justify-center flex-shrink-0 mt-0.5 text-xs font-bold">✓</div>
-                            <div>
-                                <strong class="text-white">2-Sentence Thread Briefings:</strong> Claude synthesizes multi-page email threads into quick actionable bullet points.
-                            </div>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <div class="w-5 h-5 rounded-full bg-indigo-500/30 text-indigo-300 flex items-center justify-center flex-shrink-0 mt-0.5 text-xs font-bold">✓</div>
-                            <div>
-                                <strong class="text-white">Pre-composed Contextual Drafts:</strong> Thoughtful replies are ready for your review—just tap approve or make a quick edit.
-                            </div>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <div class="w-5 h-5 rounded-full bg-indigo-500/30 text-indigo-300 flex items-center justify-center flex-shrink-0 mt-0.5 text-xs font-bold">✓</div>
-                            <div>
-                                <strong class="text-white">Automated Gmail Labels & Cleanup:</strong> Automatically sort into Client, Finance, Follow-up, or Archive junk.
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="relative z-10 p-4 rounded-2xl bg-indigo-950/60 border border-indigo-500/30 text-xs text-indigo-200 font-medium flex items-center justify-between">
-                    <span>✨ Outcome: Inbox Zero in minutes, with complete peace of mind.</span>
+                    <div class="p-3.5 rounded-xl bg-[rgba(45,227,200,0.08)] border border-[rgba(45,227,200,0.25)] text-xs text-[var(--cyan)] mono flex items-center justify-between">
+                        <span>✨ Outcome: Inbox Zero in 10 minutes every day, with 100% human control.</span>
+                    </div>
                 </div>
             </div>
 

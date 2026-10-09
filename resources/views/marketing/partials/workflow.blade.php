@@ -45,7 +45,7 @@
                     </div>
                     <h3 class="font-bold text-base text-stone-900 font-sans">Understand</h3>
                     <p class="text-xs text-stone-600 leading-relaxed font-sans">
-                        Anthropic Claude evaluates message intent, deadline pressure, tone sentiment, and conversation history.
+                        Milo evaluates message intent, deadline pressure, tone sentiment, and conversation history.
                     </p>
                 </div>
                 <div class="pt-3 border-t border-stone-100 text-[10px] text-stone-400">
@@ -62,7 +62,7 @@
                     </div>
                     <h3 class="font-bold text-base text-stone-900 font-sans">Prepare</h3>
                     <p class="text-xs text-stone-600 leading-relaxed font-sans">
-                        Generates high-fidelity reply drafts, assigns Gmail labels, and stars urgent priority items.
+                        Milo generates high-fidelity reply drafts, assigns Gmail labels, and stars urgent priority items.
                     </p>
                 </div>
                 <div class="pt-3 border-t border-stone-100 text-[10px] text-stone-400">

@@ -2,9 +2,10 @@
 
 namespace App\Models;
 
-// use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Database\Factories\UserFactory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
@@ -45,5 +46,45 @@ class User extends Authenticatable
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
         ];
+    }
+
+    /**
+     * Get all OAuth tokens for the user.
+     */
+    public function oauthTokens(): HasMany
+    {
+        return $this->hasMany(OAuthToken::class);
+    }
+
+    /**
+     * Get the Google OAuth token for the user.
+     */
+    public function googleToken(): HasOne
+    {
+        return $this->hasOne(OAuthToken::class)->where('provider', 'google');
+    }
+
+    /**
+     * Determine if the user has an active Google OAuth connection.
+     */
+    public function isConnectedToGoogle(): bool
+    {
+        return $this->googleToken()->exists();
+    }
+
+    /**
+     * Get all synced email messages for the user.
+     */
+    public function emailMessages(): HasMany
+    {
+        return $this->hasMany(EmailMessage::class);
+    }
+
+    /**
+     * Get all audit logs for the user.
+     */
+    public function auditLogs(): HasMany
+    {
+        return $this->hasMany(AuditLog::class);
     }
 }

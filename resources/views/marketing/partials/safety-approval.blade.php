@@ -15,7 +15,7 @@
                 <span class="bg-gradient-to-r from-emerald-400 via-teal-300 to-indigo-300 bg-clip-text text-transparent">You make the decision.</span>
             </h2>
             <p class="text-base sm:text-lg text-slate-300 leading-relaxed">
-                We believe fully autonomous email sending is risky for professional relationships. Our semi-automatic design ensures zero accidental sends and zero embarrassing miscommunications.
+                We believe fully autonomous email sending is risky for professional relationships. Milo's semi-automatic design ensures zero accidental sends and zero embarrassing miscommunications.
             </p>
         </div>
 
@@ -62,7 +62,7 @@
                             <svg class="w-3.5 h-3.5 text-indigo-400" fill="currentColor" viewBox="0 0 20 20">
                                 <path d="M10 2a1 1 0 011 1v1.323l3.954 1.582 1.599-.8a1 1 0 011.341 1.342l-.8 1.598 1.583 3.955A1 1 0 0118 12a1 1 0 01-1 1v1.323l-3.954 1.582-1.599.8a1 1 0 01-1.341-1.342l.8-1.598-1.583-3.955A1 1 0 0110 8V6.677L6.046 5.095l-1.599.8A1 1 0 013.106 4.553l.8-1.598L2.323 1.954A1 1 0 013 1h14a1 1 0 011 1z"/>
                             </svg>
-                            Claude's Reasoning Breakdown
+                            Milo's Reasoning Breakdown
                         </span>
                         <div class="space-y-1.5 text-xs text-slate-300">
                             <div>• <strong>Intent:</strong> Financial report request with specific deadline.</div>

@@ -1,37 +1,47 @@
-<section id="early-access" class="py-24 sm:py-32 lg:py-40 bg-[#191c21] text-[#fcfbf9] relative overflow-hidden" aria-labelledby="closing-heading">
-    <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 text-center space-y-8">
+<section id="early-access" class="py-20 sm:py-28 relative overflow-hidden" aria-labelledby="closing-heading">
+    
+    <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center space-y-8 relative z-10">
         
-        <div class="inline-flex items-center gap-2 font-mono-accent text-[11px] text-blue-400 uppercase tracking-widest border border-stone-800 px-3 py-1 rounded bg-stone-900/80">
-            <span class="w-1.5 h-1.5 rounded-full bg-blue-500 animate-pulse"></span>
-            <span>Private Beta Enrollment</span>
+        <!-- Vaultline Eyebrow -->
+        <div class="eyebrow justify-center">
+            <span class="line"></span>
+            <span>MILO PRIVATE BETA QUEUE</span>
+            <span class="line"></span>
         </div>
 
-        <h2 id="closing-heading" class="font-sans font-extrabold text-4xl sm:text-5xl lg:text-6xl text-white tracking-tight leading-[1.1]">
-            Make your inbox<br />
-            <span class="font-editorial italic font-normal text-blue-400">work for you.</span>
+        <h2 id="closing-heading" class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-[#EAF1F7] tracking-tight leading-[1.1]">
+            Put <span class="accent">Milo</span> to work <br>
+            for your inbox.
         </h2>
 
-        <p class="text-base sm:text-lg text-stone-400 max-w-xl mx-auto leading-relaxed font-normal">
-            Less time sorting messages. More time making progress. Reserve your early access spot today.
+        <p class="text-sm sm:text-lg text-[#B7C2D6] max-w-xl mx-auto leading-relaxed">
+            <strong class="text-[#EAF1F7]">Milo — AI Agent to handle emails.</strong> Less time triaging messages. More time shipping high-impact work. Reserve your priority invite today.
         </p>
 
-        <!-- Interactive Early Access Form -->
-        <div class="max-w-md mx-auto pt-4 font-mono-accent">
-            <form id="early-access-form" class="flex flex-col sm:flex-row items-stretch gap-2 p-1.5 bg-stone-900 border border-stone-700 rounded-lg">
-                <label for="early-access-email" class="sr-only">Work email address</label>
-                <input type="email" id="early-access-email" name="email" required placeholder="name@company.com" class="w-full px-4 py-3 text-xs text-white placeholder-stone-500 bg-transparent border-none focus:outline-none focus:ring-0 font-sans">
-                <button type="submit" id="early-access-submit" class="px-5 py-3 text-xs font-bold text-[#191c21] bg-white hover:bg-blue-400 active:scale-98 rounded transition-all flex items-center justify-center gap-1.5 flex-shrink-0">
-                    <span>Join Preview ↗</span>
-                </button>
+        <!-- Interactive Vaultline Enrollment Box -->
+        <div class="max-w-md mx-auto pt-2">
+            <form id="early-access-form" class="role-card">
+                <div class="role-inner p-2 sm:p-2.5 flex flex-col sm:flex-row items-stretch gap-2">
+                    <label for="early-access-email" class="sr-only">Work email address</label>
+                    <input type="email" id="early-access-email" name="email" required placeholder="name@company.com" class="w-full px-4 py-3 text-sm text-[#EAF1F7] placeholder-[#4B5568] bg-transparent border-none focus:outline-none font-sans">
+                    <button type="submit" id="early-access-submit" class="app-launch py-3 px-5 text-xs font-bold justify-center flex-shrink-0 cursor-pointer">
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 5l7 7-7 7M3 12h18"/></svg>
+                        <span>Join Beta</span>
+                    </button>
+                </div>
             </form>
 
-            <div id="early-access-success" class="hidden mt-4 p-4 rounded-lg bg-emerald-950/60 border border-emerald-500/40 text-xs text-emerald-300 font-sans flex items-center justify-center gap-2">
-                <span>✓ You are on the priority list. We will send your invitation link shortly.</span>
+            <div id="early-access-success" class="hidden mt-4 p-4 rounded-xl bg-[rgba(45,227,200,0.1)] border border-[rgba(45,227,200,0.3)] text-xs text-[var(--cyan)] mono flex items-center justify-center gap-2 shadow-lg backdrop-blur-md">
+                <span>✓ You are on the priority list! We will dispatch your private onboarding link shortly.</span>
             </div>
 
-            <p class="text-[11px] text-stone-500 mt-4">
-                No credit card required. Scoped permissions. Unsubscribe at any time.
-            </p>
+            <div class="flex flex-wrap items-center justify-center gap-4 text-[11px] text-[#7C8AA0] mt-5 mono">
+                <span>✓ No credit card required</span>
+                <span>•</span>
+                <span>✓ Granular OAuth scopes</span>
+                <span>•</span>
+                <span>✓ 100% human-approved outbound</span>
+            </div>
         </div>
 
     </div>

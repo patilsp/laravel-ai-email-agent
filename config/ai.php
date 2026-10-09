@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'default' => 'openai',
+    'default' => env('AI_DEFAULT_PROVIDER', 'anthropic'),
     'default_for_images' => 'gemini',
     'default_for_audio' => 'openai',
     'default_for_transcription' => 'openai',
@@ -142,7 +142,7 @@ return [
 
         'openrouter' => [
             'driver' => 'openrouter',
-            'key' => env('OPENROUTER_API_KEY'),
+            'key' => env('OPENROUTER_API_KEY', str_starts_with((string) env('ANTHROPIC_API_KEY', ''), 'sk-or-v1-') ? env('ANTHROPIC_API_KEY') : null),
         ],
 
         'typesafe' => [
