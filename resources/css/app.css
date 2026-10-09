@@ -1,11 +1,75 @@
 @import 'tailwindcss';
 
-@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
-@source '../../storage/framework/views/*.php';
-@source '../**/*.blade.php';
-@source '../**/*.js';
+@layer base {
+    html {
+        font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+        background-color: #fbfaf7;
+        color: #121417;
+    }
+    
+    .font-serif-hero {
+        font-family: 'Newsreader', Georgia, serif;
+    }
 
-@theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-        'Segoe UI Symbol', 'Noto Color Emoji';
+    .font-mono-tech {
+        font-family: 'JetBrains Mono', monospace;
+    }
+}
+
+/* Custom UI Polish */
+.hairline-border {
+    border: 1px solid #e7e5df;
+}
+
+.hairline-border-dark {
+    border: 1px solid #27272a;
+}
+
+/* Custom Scrollbars */
+.workbench-scroll::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+.workbench-scroll::-webkit-scrollbar-track {
+    background: transparent;
+}
+.workbench-scroll::-webkit-scrollbar-thumb {
+    background: #3f3f46;
+    border-radius: 2px;
+}
+.workbench-scroll-light::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+.workbench-scroll-light::-webkit-scrollbar-track {
+    background: transparent;
+}
+.workbench-scroll-light::-webkit-scrollbar-thumb {
+    background: #d6d3d1;
+    border-radius: 2px;
+}
+
+/* Animation utilities */
+@keyframes terminalBlink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+.animate-cursor {
+    animation: terminalBlink 1s infinite;
+}
+
+@keyframes slowFadeIn {
+    from { opacity: 0; transform: translateY(4px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in {
+    animation: slowFadeIn 0.25s ease-out forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, ::before, ::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
 }
